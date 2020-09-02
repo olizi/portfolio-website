@@ -113,7 +113,7 @@ Main content
 }
 
 .page-content {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 .profile {
@@ -209,14 +209,46 @@ button:focus,
   color: var(--white);
 }
 
-.about-content {
+.about-content,
+.contact-content {
   text-align: center;
-  margin: 20px;
 }
 
 .about-list {
   list-style-type: none;
   padding-left: 0;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin: 10px auto;
+  max-width: 400px;
+  padding: 20px 0 0;
+}
+
+.standard-label {
+  color: var(--primary-color);
+}
+
+input,
+textarea {
+  border: 1px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 7px;
+  margin: 3px auto 10px;
+  outline: none;
+}
+
+.field-short {
+  width: 49%;
+}
+
+.field-long {
+  width: 98%;
+}
+
+.field-textarea {
+  height: 100px;
 }
 
 /*

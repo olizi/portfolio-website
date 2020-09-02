@@ -5,7 +5,6 @@
 * Browsers: last 2 version
 */
 
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -107,7 +106,7 @@ Main content
 }
 
 .page-content {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 .profile {
@@ -287,14 +286,53 @@ button:focus {
   color: #fff;
 }
 
-.about-content {
+.about-content,
+.contact-content {
   text-align: center;
-  margin: 20px;
 }
 
 .about-list {
   list-style-type: none;
   padding-left: 0;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin: 10px auto;
+  max-width: 400px;
+  padding: 20px 0 0;
+}
+
+.standard-label {
+  color: #afc80a;
+}
+
+input {
+  border: 1px solid #afc80a;
+  border-radius: 3px;
+  padding: 7px;
+  margin: 3px auto 10px;
+  outline: none;
+}
+
+textarea {
+  border: 1px solid #afc80a;
+  border-radius: 3px;
+  padding: 7px;
+  margin: 3px auto 10px;
+  outline: none;
+}
+
+.field-short {
+  width: 49%;
+}
+
+.field-long {
+  width: 98%;
+}
+
+.field-textarea {
+  height: 100px;
 }
 
 /*
