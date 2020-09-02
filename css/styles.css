@@ -82,6 +82,12 @@ header
   border-bottom: 1px solid var(--light-grey);
 }
 
+.page-header__logo {
+  flex: 0 1 200px;
+  max-width: 200px;
+  height: auto;
+}
+
 .page-header__item {
   flex: 0 1 200px;
 }
@@ -214,6 +220,11 @@ button:focus,
   text-align: center;
 }
 
+.about-image {
+  text-align: center;
+  margin-top: 30px;
+}
+
 .about-list {
   list-style-type: none;
   padding-left: 0;
@@ -338,6 +349,25 @@ responsive design
   .project-list {
     grid-template-columns: 1fr;
     grid-gap: 10px;
+  }
+
+  .page-header__logo {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .navigation-list li {
+    font-size: 14px;
+    display: block;
+  }
+
+  .profile {
+    margin: 40px 10px 60px;
+  }
+
+  .profile__portrait {
+    margin: 0 10px 60px 0;
+    width: 120px;
   }
 }
 
