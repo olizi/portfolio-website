@@ -15,8 +15,10 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
+
   /* Sets the font size to 16px */
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 */
 }
 
@@ -44,7 +46,8 @@ a:visited {
   color: #05676e;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
@@ -107,7 +110,6 @@ Main content
   margin-left: 20px;
 }
 
-
 .profile {
   max-width: 700px;
   margin: 0 auto;
@@ -118,7 +120,7 @@ Main content
   width: 250px;
   height: auto;
   margin-right: 40px;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .profile__text {
@@ -132,6 +134,7 @@ Main content
   display: inline-block;
   width: 33%;
 }
+
 /* end grid fallback */
 
 @supports (display: grid) {
@@ -159,6 +162,7 @@ Main content
     -ms-grid-row-span: 2;
     grid-row: 1 / 3;
   }
+
   /* alternative:
   .project-list__item:last-child {
   grid-column-start: 3;
@@ -168,16 +172,20 @@ Main content
 }
 */
 }
+
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #afc80a;
   color: #fff;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
   -webkit-transition: 0.2s background-color;
@@ -188,16 +196,20 @@ button {
   transition-property: opacity;
   */
 }
+
 .button {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #afc80a;
   color: #fff;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
   -webkit-transition: 0.2s background-color;
@@ -208,16 +220,20 @@ button {
   transition-property: opacity;
   */
 }
+
 .button__send-message {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #afc80a;
   color: #fff;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
   -webkit-transition: 0.2s background-color;
@@ -278,7 +294,7 @@ button:focus {
 
 .about-list {
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 /*
@@ -324,6 +340,7 @@ svg animation
     -webkit-transform-origin: top center;
             transform-origin: top center;
   }
+
   100% {
     -webkit-transform: scale(1.3, 1.3);
             transform: scale(1.3, 1.3);
@@ -339,6 +356,7 @@ svg animation
     -webkit-transform-origin: top center;
             transform-origin: top center;
   }
+
   100% {
     -webkit-transform: scale(1.3, 1.3);
             transform: scale(1.3, 1.3);
@@ -351,12 +369,15 @@ svg animation
   0% {
     fill: #fff;
   }
+
   10% {
     fill: #fff;
   }
+
   50% {
-    fill: #00344A;
+    fill: #00344a;
   }
+
   100% {
     fill: #fff;
   }
@@ -366,12 +387,15 @@ svg animation
   0% {
     fill: #fff;
   }
+
   10% {
     fill: #fff;
   }
+
   50% {
-    fill: #00344A;
+    fill: #00344a;
   }
+
   100% {
     fill: #fff;
   }
@@ -379,9 +403,10 @@ svg animation
 
 @-webkit-keyframes bird1-move {
   0% {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
+
   100% {
     -webkit-transform: translate(-200px, -80px);
             transform: translate(-200px, -80px);
@@ -390,9 +415,10 @@ svg animation
 
 @keyframes bird1-move {
   0% {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
+
   100% {
     -webkit-transform: translate(-200px, -80px);
             transform: translate(-200px, -80px);
@@ -401,9 +427,10 @@ svg animation
 
 @-webkit-keyframes bird2-move {
   0% {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
+
   100% {
     -webkit-transform: translate(80px, -70px);
             transform: translate(80px, -70px);
@@ -412,9 +439,10 @@ svg animation
 
 @keyframes bird2-move {
   0% {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
+
   100% {
     -webkit-transform: translate(80px, -70px);
             transform: translate(80px, -70px);
@@ -432,6 +460,7 @@ responsive design
     grid-gap: 10px;
   }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr 10px 1fr;
@@ -449,6 +478,7 @@ shared code
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: undefined;
   }
